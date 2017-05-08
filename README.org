@@ -1,0 +1,53 @@
+#+TITLE: DocTags
+
+* Basic idea
+The program helps organize various types of documents (text-based, e.g. ~PDF, DjVu, epub, mobi, chm, doc(x), txt~), but also web pages saved for offline use, pictures and all you can imagine for which you need organization.
+
+The functions should:
+- Prompt the user a list of files in a range chosen (for the starting letter) or offer a search;
+- Select the item the user chooses;
+- View, edit or add various fields for it:
+    - author;
+    - title;
+    - tag(s)/keyword(s);
+    - description/abstract;
+- Let the user query the database, i.e. filter for specific author(s)/tag(s) or whatever field they choose. Thus, it should answer questions like 
+
+#+BEGIN_QUOTE
+What authors do I have in the database whose name starts with H and who've written stuff I classified (tagged) as __history and __politics?
+#+END_QUOTE
+
+The output of the program (the database, which will get updated every time the user edits or adds an entry) is a plain text file.
+
+
+* Working status
+*8th of May, 2017:*
+- view database;
+- filter by starting letter.
+
+** Use
+- have a folder called ~docs~ in the current folder (where you save ~doctags.py~), which contains various documents;
+- run ~doctags.py~ with ~python3~;
+- make a valid choice (~1~ or ~1a~ for the moment);
+- follow the instructions.
+
+
+* Further ideas (maybe to do)
+- Allow the user to rename "nonstandard" files that do not have the required name: ~AuthorLast, AuthorFirst - Title [publisher, year]~;
+- "Translate" to and from this database to ~.bib~ BibTeX database;
+- Use shell programs such as ~pdfinfo, pdftools~ and ~exiftools~ to "hardcode" information in the files;
+- Instead of / alternative to the ~__tags~ fields, make symlinks in folders, so they can be browsed with the file browser.
+
+
+* Beautification (maybe to do)
+- Print in a tabular form... ? Or export to Emacs's ~org-mode~ (using ~pandoc~)
+
+
+
+* Personal notes
+Although I'm sure there are many alternatives to do the same task quicker, better, more beautiful and so forth, I decided to make this basically for 3 reasons:
+1. Learn some programming -- it's not hard to notice my beginner's level in the code;
+2. Have total control on how a program performs -- i.e. have it perform my way;
+3. Make it perform in the simplest way, i.e. based on the command line, using plain text and some n00b ASCII art / beautification.
+
+Feel free to copy, modify and distribute the code as much as you want, criticize it or make suggestions. I promise to read every comment or message, but make *no* commitment to accepting or implementing any of the requests or suggestions.
