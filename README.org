@@ -48,6 +48,6 @@ The output of the program (the database, which will get updated every time the u
 Although I'm sure there are many alternatives to do the same task quicker, better, more beautiful and so forth, I decided to make this basically for 3 reasons:
 1. Learn some programming -- it's not hard to notice my beginner's level in the code;
 2. Have total control on how a program performs -- i.e. have it perform my way;
-3. Make it perform in the simplest way, i.e. based on the command line, using plain text and some n00b ASCII art / beautification.
+3. Make it perform in the simplest way, i.e. based on the command line, using plain text and some n00b ASCII art or beautification.
 
 Feel free to copy, modify and distribute the code as much as you want, criticize it or make suggestions. I promise to read every comment or message, but make *no* commitment to accepting or implementing any of the requests or suggestions.
