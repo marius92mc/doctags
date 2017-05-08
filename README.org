@@ -50,4 +50,7 @@ Although I'm sure there are many alternatives to do the same task quicker, bette
 2. Have total control on how a program performs -- i.e. have it perform my way;
 3. Make it perform in the simplest way, i.e. based on the command line, using plain text and some n00b ASCII art or beautification.
 
-Feel free to copy, modify and distribute the code as much as you want, criticize it or make suggestions. I promise to read every comment or message, but make *no* commitment to accepting or implementing any of the requests or suggestions.
+Feel free to copy, modify and distribute the code as much as you want, criticize it or make suggestions. I promise to read every comment or message, but make *no* commitment to accepting or implementing any of the requests or suggestions[fn:1].
+
+
+[fn:1] Marius, ~cowsay "HO BĂ"~.
