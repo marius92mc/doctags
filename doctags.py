@@ -9,40 +9,6 @@
 import os                       # for file & folder operations
 
 
-def main():
-    print("The program allows you to view, edit or filter")
-    print("your documents stored in a specific folder.")
-    print("To access a function, please enter the specific option:")
-    print("============OPTIONS=====================")
-    print("1. View entire database")
-    print("\t 1a. Filter by starting letter")
-    print("2. Query by specific field (Author, Title, Tag)")
-    print("3. Edit entry")
-    print("4. Open with default reader")
-    print("5. Quit")
-    print("========================================")
-    choice = input("Your option: ")
-    choices = ["1", "1a", "2", "3", "4", "5"]
-
-    # validate choice
-    while choice not in choices:
-        print("Please enter a valid choice")
-        choice = input()
-    # perform specific action
-    if choice == "1":
-        view_database()
-    elif choice == "1a":
-        filter_starting_letter()
-    # elif choice == "2":
-    #     query_by_field()
-    # elif choice == "3":
-    #     edit_entry()
-    # elif choice == "4":
-    #     open_entry()
-    # elif choice == "5":
-    #     quit_program()
-
-
 def view_database():
     my_docs = os.listdir("docs")
     my_docs.sort()
@@ -108,5 +74,40 @@ def filter_starting_letter():
                     return
 
 
-# call the main function
-main()
+def main():
+    print("The program allows you to view, edit or filter")
+    print("your documents stored in a specific folder.")
+    print("To access a function, please enter the specific option:")
+    print("============OPTIONS=====================")
+    print("1. View entire database")
+    print("\t 1a. Filter by starting letter")
+    print("2. Query by specific field (Author, Title, Tag)")
+    print("3. Edit entry")
+    print("4. Open with default reader")
+    print("5. Quit")
+    print("========================================")
+    choice = input("Your option: ")
+    choices = ["1", "1a", "2", "3", "4", "5"]
+
+    # validate choice
+    while choice not in choices:
+        print("Please enter a valid choice")
+        choice = input()
+    # perform specific action
+    if choice == "1":
+        view_database()
+    elif choice == "1a":
+        filter_starting_letter()
+    # elif choice == "2":
+    #     query_by_field()
+    # elif choice == "3":
+    #     edit_entry()
+    # elif choice == "4":
+    #     open_entry()
+    # elif choice == "5":
+    #     quit_program()
+
+
+if __name__ == "__main__":
+    main()
+
